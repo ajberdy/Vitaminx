@@ -171,7 +171,7 @@ def main():
                 score += 30
                 track.goodies[y][x - 1] = EMPTY
             screen.addstr(height//4, width*3//4, f"SCORE: {score}       ")
-            
+
             screen.addstr(height - y - 1, left_wall + x, ' ', curses.color_pair(RACER + 1))
 
             # action = racer.get_action(track[racer_y:racer_y + 2, :], racer_x)
